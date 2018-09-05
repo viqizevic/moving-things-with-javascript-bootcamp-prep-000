@@ -28,6 +28,14 @@ function moveDodgerRight() {
     dodger.style.left = `${right + 2}px`
   }
 }
+function moveDodgerUp() {
+  var upNumbers = dodger.style.bottom.replace('px', '')
+  var up = parseInt(upNumbers, 10)
+ 
+  if (up < 400) {
+    dodger.style.left = `${right + 2}px`
+  }
+}
 
 
 document.addEventListener('keydown', function(e) {
